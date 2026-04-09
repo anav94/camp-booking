@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    letter-spacing: 20px;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 5px;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 1.5s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    letter-spacing: 5px;
+  }
+  100% {
+    opacity: 0;
+    letter-spacing: 20px;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 1s ease-in forwards;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.8s ease forwards;
+}
